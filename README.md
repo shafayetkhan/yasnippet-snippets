@@ -9,6 +9,9 @@ and it will checkout automatically this repository, at the last version it was s
 Otherwise if you want the latest and greatest snippets collection proceed as follows:
 
 1. clone this repository
+   - mkdir -p ~/.emacs.d/plugins
+   - git clone git@github.com:shafayetkhan/yasnippet-snippets.git snippets
+   - git remote add upstream git@github.com:AndreaCrotti/yasnippet-snippets.git
 2. add to your .emacs the following
    - (add-to-list 'yas/root-directory "$DIRECTORY_WHERE_YOU_CLONED")
    - (yas/initialize)
